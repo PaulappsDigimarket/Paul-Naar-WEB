@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paul Naar - Cantautor & Salsa Moderna | Sitio Oficial</title>
+  <meta name="description" content="Sitio web oficial de Paul Naar. Gira de conciertos, lanzamientos de salsa moderna, discografía, videos y booking oficial.">
+  
+  <!-- Google Fonts: Syne & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              red: '#DC2626',
+              'red-dark': '#991B1B',
+              'red-glow': 'rgba(220, 38, 38, 0.35)',
+              bg: '#0E0E0E',
+              surface: '#131313',
+              card: '#18181B',
+              border: '#27272A',
+              muted: '#A1A1AA'
+            }
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0E0E0E;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #27272A;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #DC2626;
+    }
+    .text-glow {
+      text-shadow: 0 0 20px rgba(220, 38, 38, 0.6);
+    }
+    .box-glow {
+      box-shadow: 0 0 35px rgba(220, 38, 38, 0.15);
+    }
+    .box-glow-strong {
+      box-shadow: 0 0 45px rgba(220, 38, 38, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-[#0E0E0E] text-white font-sans antialiased selection:bg-brand-red selection:text-white relative pb-24">
+
+  <!-- ========================================== -->
+  <!-- NAVIGATION BAR (HEADER) -->
+  <!-- ========================================== -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-[#0E0E0E]/90 backdrop-blur-md border-b border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Brand Logo -->
+      <a href="#inicio" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-brand-red to-black flex items-center justify-center border border-brand-red/40 group-hover:border-brand-red transition-all">
+          <span class="font-display font-black text-xl text-white">P</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-display font-extrabold text-xl tracking-wider text-white">PAUL <span class="text-brand-red">NAAR</span></span>
+          <span class="text-[10px] tracking-widest text-brand-muted uppercase font-bold">Cantautor & Salsa</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <nav class="hidden md:flex items-center space-x-7 text-sm font-semibold text-zinc-300">
+        <a href="#inicio" class="hover:text-brand-red transition-colors">Inicio</a>
+        <a href="#musica" class="hover:text-brand-red transition-colors">Música</a>
+        <a href="#gira" class="hover:text-brand-red transition-colors">Gira 2026</a>
+        <a href="#booking" class="hover:text-brand-red transition-colors">Booking</a>
+        <a href="#redes" class="hover:text-brand-red transition-colors">Comunidad</a>
+      </nav>
+
+      <!-- Right CTAs & Social Quicklinks -->
+      <div class="flex items-center gap-3 sm:gap-4">
+        <div class="hidden lg:flex items-center gap-3 pr-3 border-r border-zinc-800">
+          <a href="https://www.youtube.com/@paulnaar9507" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-brand-red transition-colors p-1" title="YouTube">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/paulnaar2026/reels/" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-brand-red transition-colors p-1" title="Instagram">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@paulnaar" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-brand-red transition-colors p-1" title="TikTok">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.41c.01 1.8-.46 3.63-1.48 5.12-1.23 1.83-3.23 3.06-5.41 3.39-2.02.32-4.14-.06-5.91-1.07-2.31-1.32-3.79-3.75-3.8-6.43-.05-2.72 1.4-5.26 3.68-6.68 1.84-1.15 4.1-1.48 6.2-.88v4.14c-1.12-.4-2.39-.33-3.46.22-1.12.58-1.87 1.74-1.92 3-.06 1.44.75 2.82 2.01 3.48 1.25.66 2.8.58 3.97-.22.9-.62 1.46-1.64 1.48-2.71V.02z"/></svg>
+          </a>
+        </div>
+
+        <a href="#booking" class="bg-brand-red hover:bg-brand-red-dark text-white text-xs sm:text-sm font-bold uppercase tracking-wider px-4 sm:px-5 py-2.5 rounded-md transition-all shadow-lg hover:shadow-brand-red/30">
+          Booking / Contratos
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ========================================== -->
+  <!-- HERO SECTION -->
+  <!-- ========================================== -->
+  <section id="inicio" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <!-- Ambient Background Lighting -->
+    <div class="absolute top-1/4 -left-48 w-96 h-96 bg-brand-red/20 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute top-1/3 -right-48 w-96 h-96 bg-brand-red/15 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Copy & Presentation -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-red/10 border border-brand-red/30 text-brand-red text-xs font-bold uppercase tracking-widest">
+            <span class="w-2 h-2 rounded-full bg-brand-red animate-ping"></span>
+            Cantautor, Voz & Esencia Latina • Tour 2026
+          </div>
+
+          <h1 class="font-display font-black text-4xl sm:text-6xl xl:text-7xl leading-none uppercase tracking-tight">
+            El Ritmo y la Pasión de la <span class="text-brand-red text-glow block sm:inline">Salsa Moderna</span>
+          </h1>
+
+          <p class="text-zinc-300 text-base sm:text-lg max-w-2xl leading-relaxed">
+            La fuerza del trombón, la cadencia del tambor y la poesía de la esquina. Paul Naar fusiona el golpe de la salsa clásica neoyorquina con el sonido contemporáneo del barrio global.
+          </p>
+
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#musica" class="bg-brand-red hover:bg-brand-red-dark text-white font-extrabold uppercase text-sm tracking-wider px-8 py-4 rounded-md transition-all shadow-xl hover:shadow-brand-red/40 flex items-center gap-2">
+              <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+              Escuchar Último Sencillo
+            </a>
+            <a href="#gira" class="bg-zinc-900/80 hover:bg-zinc-800 text-white font-bold uppercase text-sm tracking-wider px-8 py-4 rounded-md border border-zinc-700 hover:border-zinc-500 transition-all flex items-center gap-2">
+              <svg class="w-5 h-5 fill-none stroke-current" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              Ver Fechas de Conciertos
+            </a>
+          </div>
+
+          <div class="flex items-center gap-6 pt-4 text-xs font-semibold text-zinc-400">
+            <span class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span> Sonido Orquesta en Vivo
+            </span>
+            <span class="flex items-center gap-2">
+              <span class="w-1.5 h-1.5 rounded-full bg-brand-red"></span> Nuevo Álbum: Corazón de Rumbero
+            </span>
+          </div>
+        </div>
+
+        <!-- Right Column: Hero Visual Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md rounded-2xl overflow-hidden bg-brand-surface border border-brand-border box-glow">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw2Zb6pMwbpav73iU-JLO4hbA5wAzkT1ZDpnheQBOwykElB3lSu3e_gMnKDo-pn287M-la1LudxvASnOMbjE4920yy1zRyb7mhebIbkLODPcAsagRoo2QWTng4Fuip0Fmgs1qM2Nnt5xds3Iir54UZiQZXphgwFcf_XqTSmkss_98dWjs9LEb-Go0BmU6TKgU9Q__7h3dlD1-vualzGwrc1IKLSglI5_oZ1tU_-HXw4ZBtR7cu0x6Axg" alt="Paul Naar Cantautor" class="w-full h-auto object-cover object-center transform hover:scale-105 transition-transform duration-700">
+            
+            <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+            
+            <div class="absolute bottom-0 left-0 right-0 p-6 space-y-2">
+              <span class="bg-brand-red text-white text-[10px] font-black uppercase tracking-wider px-2.5 py-1 rounded">Sencillo Líder 2026</span>
+              <h3 class="font-display font-extrabold text-2xl text-white">Fuego en la Clave</h3>
+              <p class="text-zinc-300 text-xs">Paul Naar • Producción y arreglos con orquesta de 14 músicos</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4 p-6 rounded-xl bg-brand-surface/60 border border-brand-border/60">
+        <div class="text-center p-3">
+          <div class="font-display font-black text-3xl sm:text-4xl text-white">+25</div>
+          <div class="text-xs uppercase tracking-widest text-zinc-400 mt-1 font-bold">Años de Trayectoria</div>
+        </div>
+        <div class="text-center p-3">
+          <div class="font-display font-black text-3xl sm:text-4xl text-brand-red">+100</div>
+          <div class="text-xs uppercase tracking-widest text-zinc-400 mt-1 font-bold">Conciertos en Vivo</div>
+        </div>
+        <div class="text-center p-3">
+          <div class="font-display font-black text-3xl sm:text-4xl text-white">+500K</div>
+          <div class="text-xs uppercase tracking-widest text-zinc-400 mt-1 font-bold">Streams Globales</div>
+        </div>
+        <div class="text-center p-3">
+          <div class="font-display font-black text-3xl sm:text-4xl text-brand-red">4</div>
+          <div class="text-xs uppercase tracking-widest text-zinc-400 mt-1 font-bold">Redes Oficiales</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- MUSIC & RELEASES SECTION -->
+  <!-- ========================================== -->
+  <section id="musica" class="py-24 bg-[#0a0a0a] border-t border-brand-border relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+        <div>
+          <span class="text-brand-red font-bold text-xs uppercase tracking-widest">Catálogo Fonográfico Oficial</span>
+          <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mt-2">
+            Discografía & <span class="text-brand-red">Lanzamientos</span>
+          </h2>
+        </div>
+        <p class="text-zinc-400 text-sm max-w-md mt-4 md:mt-0">
+          Explora las producciones maestras de Paul Naar con arreglos de metales en vivo y percusión afrocubana de alta fidelidad.
+        </p>
+      </div>
+
+      <!-- Featured Album Spotlight Card -->
+      <div class="bg-brand-surface rounded-2xl border border-brand-border overflow-hidden p-6 sm:p-10 mb-16 box-glow">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-5">
+            <div class="relative rounded-xl overflow-hidden border border-zinc-800">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAm12AlEhMOmRh9yo6xw7RZR7rDVu7K14Mrw2sn_cHaU0EnnFgUSLFtJVVv-pL_t697dnQah2WcuGz6cvLF-xk1ZCPwV4OSPiTJa9P40epyovSbAaz5GiSLi9WcBlCQcvvBmOD9RkJEx0LDe1G2hVn7IaApdEovh5yPwDalnkbdCtesvHhVdi9a2ybPQJmruGa99t7EZuLq1aahdujBDyWcqwVMcyir37dX3_WfPFlVXtECiMyNyP0zw" alt="Corazón de Rumbero - Álbum" class="w-full h-auto object-cover">
+              <div class="absolute top-4 left-4 bg-brand-red text-white text-xs font-black uppercase px-3 py-1 rounded">Álbum de Estudio</div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 space-y-5">
+            <span class="text-xs uppercase tracking-wider font-extrabold text-zinc-400">Producción 2026 • Salsa Brava Moderna • 10 Temas</span>
+            <h3 class="font-display font-black text-3xl sm:text-5xl text-white uppercase leading-none">Corazón de Rumbero</h3>
+            <p class="text-zinc-300 text-sm sm:text-base leading-relaxed">
+              La consagración sonora de Paul Naar: secciones de vientos rugientes, métricas de tambor batá y líricas que retratan el alma del barrio latino contemporáneo sin perder la cadencia elegante del son tradicional.
+            </p>
+
+            <!-- Tracklist mini-player -->
+            <div class="space-y-2 pt-2">
+              <div class="flex items-center justify-between p-3 rounded-lg bg-zinc-900 border border-zinc-800 hover:border-brand-red transition-all cursor-pointer">
+                <div class="flex items-center gap-3">
+                  <span class="text-brand-red font-display font-black text-sm">01</span>
+                  <div>
+                    <div class="font-bold text-sm text-white flex items-center gap-2">
+                      Corazón de Rumbero 
+                      <span class="text-[9px] bg-brand-red/20 text-brand-red px-1.5 py-0.5 rounded font-black uppercase">Focus Track</span>
+                    </div>
+                    <div class="text-xs text-zinc-400">Paul Naar & Los Bravos del Solar</div>
+                  </div>
+                </div>
+                <span class="text-xs text-zinc-500 font-mono">4:38</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3 rounded-lg bg-zinc-900/60 border border-zinc-800/80 hover:border-brand-red transition-all cursor-pointer">
+                <div class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-display font-black text-sm">02</span>
+                  <div>
+                    <div class="font-bold text-sm text-white">Tumbao de Medianoche</div>
+                    <div class="text-xs text-zinc-400">Piano solo: Danilo Morales</div>
+                  </div>
+                </div>
+                <span class="text-xs text-zinc-500 font-mono">5:12</span>
+              </div>
+
+              <div class="flex items-center justify-between p-3 rounded-lg bg-zinc-900/60 border border-zinc-800/80 hover:border-brand-red transition-all cursor-pointer">
+                <div class="flex items-center gap-3">
+                  <span class="text-zinc-500 font-display font-black text-sm">03</span>
+                  <div>
+                    <div class="font-bold text-sm text-white">Esa Mirada en la Barra</div>
+                    <div class="text-xs text-zinc-400">Salsa Romántica / Arreglos de Cuerdas</div>
+                  </div>
+                </div>
+                <span class="text-xs text-zinc-500 font-mono">4:05</span>
+              </div>
+            </div>
+
+            <!-- Listening Buttons -->
+            <div class="flex flex-wrap gap-3 pt-3">
+              <a href="https://www.youtube.com/@paulnaar9507" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-lg bg-zinc-900 hover:bg-zinc-800 text-xs font-bold uppercase tracking-wider text-white border border-zinc-700 flex items-center gap-2">
+                <svg class="w-4 h-4 fill-red-600" viewBox="0 0 24 24"><path d="M10 15l5.19-3L10 9v6m11.56-7.83c.13.47.22 1.1.28 1.9.07.8.1 1.49.1 2.09L22 12c0 2.19-.16 3.8-.44 4.83-.25.9-.83 1.48-1.73 1.73-.47.13-1.33.22-2.65.28-1.3.07-2.49.1-3.59.1L12 22c-4.19 0-6.8-.16-7.83-.44-.9-.25-1.48-.83-1.73-1.73-.13-.47-.22-1.1-.28-1.9-.07-.8-.1-1.49-.1-2.09L2 12c0-2.19.16-3.8.44-4.83.25-.9.83-1.48 1.73-1.73.47-.13 1.33-.22 2.65-.28 1.3-.07 2.49-.1 3.59-.1L12 2c4.19 0 6.8.16 7.83.44.9.25 1.48.83 1.73 1.73z"/></svg>
+                YouTube Music
+              </a>
+              <a href="#booking" class="px-4 py-2.5 rounded-lg bg-brand-red hover:bg-brand-red-dark text-xs font-bold uppercase tracking-wider text-white shadow-md flex items-center gap-2">
+                Descargar EPK & Pack Radial (418 MB)
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Music Discography Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <!-- Album 1 -->
+        <div class="bg-brand-surface p-5 rounded-xl border border-brand-border hover:border-brand-red transition-all group">
+          <div class="aspect-square rounded-lg overflow-hidden relative mb-4">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC4wI-RO7i-MU9jkfvOKdIhyPlUYzPfeEW4hqX6yp7wc-cY_A1aEhUU4sOwgW1wuufTV9YLEtJbUaxneCS8yZobxwAoJF8YMpHwkihXAvW0NjLX_0kzZQXNDeINGVmuc4hj0bKT9KvXLySjCbcVxl33B5KWIADiFEebgVCXAcZlFM26C6UrycBK4mQREc9tjOl5zojQOGhrW9K8RmdB8s_9BlXniu0LsMefCdOWrUnG1LFDoIL_kMVpEQ" alt="Noches de Timba" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-black/80 backdrop-blur-sm text-white text-[10px] font-bold uppercase px-2 py-1 rounded">2024 • EP Especial</span>
+          </div>
+          <h4 class="font-display font-bold text-lg text-white">Noches de Timba</h4>
+          <p class="text-xs text-zinc-400 mt-1">Fusión audaz de mambo moderno y timba callejera grabada con metales en directo.</p>
+        </div>
+
+        <!-- Album 2 -->
+        <div class="bg-brand-surface p-5 rounded-xl border border-brand-border hover:border-brand-red transition-all group">
+          <div class="aspect-square rounded-lg overflow-hidden relative mb-4">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFV_aISAyQs5q9NC3D1lXJ-Fop3_02x0gsFIfKI2ilAK-LnRByVLBUwWg4TE2TQhjkQG1wZ4J26wI_J9zOyP38vqBayexeZkyS1XWtoIvIWpMRYXrRj6H3RArHZpbOFgJwBzfs4wmT63KRvXMxHvlvrBZSsZv_UaGitwe9XLyWhnfogTkxsH73XqnhIoKbTSGUzHVySn0nKIkscYGb13Y_IAzJ6VWRuwg3dlKi0z1x7M6O_zCbCCs8Dg" alt="Pasión Tropical" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-black/80 backdrop-blur-sm text-white text-[10px] font-bold uppercase px-2 py-1 rounded">2023 • Álbum</span>
+          </div>
+          <h4 class="font-display font-bold text-lg text-white">Pasión Tropical</h4>
+          <p class="text-xs text-zinc-400 mt-1">El disco que definió el estilo vocal de Paul Naar con boleros son y salsa para el bailador.</p>
+        </div>
+
+        <!-- Album 3 -->
+        <div class="bg-brand-surface p-5 rounded-xl border border-brand-border hover:border-brand-red transition-all group">
+          <div class="aspect-square rounded-lg overflow-hidden relative mb-4">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfXABgtFEtq3l6aM9BXAg29LNhIoLY1ZxmjXwBfnh8Zct3PSTIvZE_oX4wCy-VW7WaYCL2_exJsr0zDd0jkB0IXC5ZLVf3M-sA9VZgATc_CMbTH_5WxPt9-kwZM5uz0yr6fh3kmjNcOPkUCMYEvXiCezREVdVfU5aQZVKeI7MVEBdnzachcA8iwZ9mjm1uKUAi7_MYbi8KTLyzyvEA_c3MkO5KXS4DnPZl8HYvNdj7eB2MJzqcMFWHgw" alt="En Vivo: Bellas Artes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-3 left-3 bg-black/80 backdrop-blur-sm text-white text-[10px] font-bold uppercase px-2 py-1 rounded">2022 • En Vivo</span>
+          </div>
+          <h4 class="font-display font-bold text-lg text-white">En Vivo: Bellas Artes</h4>
+          <p class="text-xs text-zinc-400 mt-1">Concierto sinfónico completo con orquesta de 18 músicos en sala llena de gala.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- TOUR & CONCERTS SECTION -->
+  <!-- ========================================== -->
+  <section id="gira" class="py-24 bg-[#0E0E0E] relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-brand-red font-bold text-xs uppercase tracking-widest">Gira Mundial en Curso</span>
+        <h2 class="font-display font-black text-4xl sm:text-6xl uppercase tracking-tight text-white">
+          Tour 2026: <span class="text-brand-red">Fuego y Clave</span>
+        </h2>
+        <p class="text-zinc-300 text-sm sm:text-base">
+          Vive la experiencia de la salsa en vivo con Paul Naar y su orquesta completa. Revisa las fechas internacionales y asegura tus entradas.
+        </p>
+      </div>
+
+      <!-- Tour Dates Cards List -->
+      <div class="space-y-4 max-w-5xl mx-auto">
+        
+        <!-- Date Item 1 -->
+        <div class="bg-brand-surface p-5 sm:p-6 rounded-xl border border-brand-border hover:border-brand-red transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-6">
+            <div class="text-center bg-black/60 px-4 py-2 rounded-lg border border-zinc-800">
+              <span class="block text-xs font-bold text-brand-red uppercase">OCT</span>
+              <span class="block font-display font-black text-2xl text-white">15</span>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-brand-red uppercase">Últimas Entradas • 20:30 EST</div>
+              <h3 class="font-display font-bold text-xl text-white">Miami, Florida</h3>
+              <p class="text-xs text-zinc-400">James L. Knight Center</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 w-full md:w-auto">
+            <span class="text-xs font-semibold text-zinc-400 hidden sm:inline">Zona VIP Disponible</span>
+            <a href="#booking" class="w-full md:w-auto text-center bg-brand-red hover:bg-brand-red-dark text-white font-bold uppercase text-xs tracking-wider px-6 py-3 rounded-md transition-all">
+              Comprar Tickets
+            </a>
+          </div>
+        </div>
+
+        <!-- Date Item 2 -->
+        <div class="bg-brand-surface p-5 sm:p-6 rounded-xl border border-brand-border hover:border-brand-red transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-6">
+            <div class="text-center bg-black/60 px-4 py-2 rounded-lg border border-zinc-800">
+              <span class="block text-xs font-bold text-brand-red uppercase">OCT</span>
+              <span class="block font-display font-black text-2xl text-white">24</span>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-amber-400 uppercase">Capital Mundial de la Salsa</div>
+              <h3 class="font-display font-bold text-xl text-white">Cali, Colombia</h3>
+              <p class="text-xs text-zinc-400">Arena Cañaveralejo</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 w-full md:w-auto">
+            <a href="#booking" class="w-full md:w-auto text-center bg-brand-red hover:bg-brand-red-dark text-white font-bold uppercase text-xs tracking-wider px-6 py-3 rounded-md transition-all">
+              Comprar Tickets
+            </a>
+          </div>
+        </div>
+
+        <!-- Date Item 3 -->
+        <div class="bg-brand-surface p-5 sm:p-6 rounded-xl border border-brand-border hover:border-brand-red transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-6">
+            <div class="text-center bg-black/60 px-4 py-2 rounded-lg border border-zinc-800">
+              <span class="block text-xs font-bold text-zinc-500 uppercase">NOV</span>
+              <span class="block font-display font-black text-2xl text-zinc-400">07</span>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-zinc-500 uppercase">Capacidad Completa (5,000 asistentes)</div>
+              <h3 class="font-display font-bold text-xl text-white">San Juan, Puerto Rico</h3>
+              <p class="text-xs text-zinc-400">Coca-Cola Music Hall</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 w-full md:w-auto">
+            <button class="w-full md:w-auto text-center bg-zinc-800 text-zinc-400 font-bold uppercase text-xs tracking-wider px-6 py-3 rounded-md cursor-not-allowed">
+              Lista de Espera
+            </button>
+          </div>
+        </div>
+
+        <!-- Date Item 4 -->
+        <div class="bg-brand-surface p-5 sm:p-6 rounded-xl border border-brand-border hover:border-brand-red transition-all flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
+          <div class="flex items-center gap-6">
+            <div class="text-center bg-black/60 px-4 py-2 rounded-lg border border-zinc-800">
+              <span class="block text-xs font-bold text-brand-red uppercase">DIC</span>
+              <span class="block font-display font-black text-2xl text-white">05</span>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-brand-red uppercase">Tour Europeo Especial</div>
+              <h3 class="font-display font-bold text-xl text-white">Madrid, España</h3>
+              <p class="text-xs text-zinc-400">WiZink Center</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-3 w-full md:w-auto">
+            <a href="#booking" class="w-full md:w-auto text-center bg-brand-red hover:bg-brand-red-dark text-white font-bold uppercase text-xs tracking-wider px-6 py-3 rounded-md transition-all">
+              Comprar Tickets
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- BOOKING & CONTRACTS SECTION -->
+  <!-- ========================================== -->
+  <section id="booking" class="py-24 bg-[#0a0a0a] border-t border-brand-border relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Rider Info & Contact Details -->
+        <div class="lg:col-span-5 space-y-8">
+          <div>
+            <span class="text-brand-red font-bold text-xs uppercase tracking-widest">Temporada Internacional 2026 / 2027</span>
+            <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mt-2">
+              Booking & <span class="text-brand-red">Contratos</span>
+            </h2>
+            <p class="text-zinc-400 text-sm mt-3 leading-relaxed">
+              Disponibilidad para conciertos masivos, festivales internacionales, eventos corporativos exclusivos y presentaciones privadas con orquesta completa.
+            </p>
+          </div>
+
+          <!-- Official Technical Rider Card -->
+          <div class="p-6 rounded-xl bg-brand-surface border border-brand-border space-y-4">
+            <div class="flex items-center justify-between border-b border-zinc-800 pb-3">
+              <h4 class="font-display font-bold text-white text-base">Ficha Técnica & Rider Oficial</h4>
+              <span class="text-[10px] bg-brand-red/20 text-brand-red px-2 py-0.5 rounded font-black">Versión 4.2</span>
+            </div>
+
+            <div class="grid grid-cols-2 gap-4 text-xs">
+              <div class="bg-black/40 p-3 rounded border border-zinc-800/80">
+                <span class="font-display font-bold text-lg text-white block">14</span>
+                <span class="text-zinc-400">Músicos en Tarima (Metales, ritmo y coros)</span>
+              </div>
+              <div class="bg-black/40 p-3 rounded border border-zinc-800/80">
+                <span class="font-display font-bold text-lg text-brand-red block">32</span>
+                <span class="text-zinc-400">Canales FOH con monitoreo In-Ear</span>
+              </div>
+              <div class="bg-black/40 p-3 rounded border border-zinc-800/80">
+                <span class="font-display font-bold text-lg text-white block">90m</span>
+                <span class="text-zinc-400">Duración Show Continuo</span>
+              </div>
+              <div class="bg-black/40 p-3 rounded border border-zinc-800/80">
+                <span class="font-display font-bold text-lg text-brand-red block">4K</span>
+                <span class="text-zinc-400">Loop Visuales Timecode</span>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <div class="text-xs text-zinc-300 font-semibold mb-1">Directorio de Contacto Directo:</div>
+              <p class="text-xs text-zinc-400">📧 <span class="text-white">management@paulnaarofficial.com</span></p>
+              <p class="text-xs text-zinc-400">📱 WhatsApp Booking: <span class="text-white font-mono">+1 (786) 555-NAAR</span></p>
+            </div>
+          </div>
+
+          <!-- Quote Card -->
+          <div class="p-6 rounded-xl bg-gradient-to-br from-brand-red/15 to-transparent border border-brand-red/30">
+            <blockquote class="italic text-zinc-200 text-sm leading-relaxed">
+              "La salsa no se piensa, se vive en cada paso, en cada descarga y en la mirada del que suda por amor al ritmo."
+            </blockquote>
+            <span class="block text-xs font-bold text-brand-red uppercase tracking-wider mt-3">— Paul Naar</span>
+          </div>
+
+        </div>
+
+        <!-- Right: Booking Form -->
+        <div class="lg:col-span-7">
+          <div class="p-8 sm:p-10 rounded-2xl bg-brand-surface border border-brand-border box-glow">
+            <h3 class="font-display font-black text-2xl sm:text-3xl text-white uppercase tracking-tight mb-2">Formulario de Solicitud Directa</h3>
+            <p class="text-zinc-400 text-xs sm:text-sm mb-8">Completa la información del evento. Nuestro equipo directivo responde en menos de 24 horas hábiles.</p>
+
+            <form onsubmit="event.preventDefault(); alert('Solicitud de booking enviada con éxito. El equipo de management se comunicará contigo.');" class="space-y-4">
+              
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Nombre Completo *</label>
+                  <input type="text" required placeholder="Ej. Roberto Menéndez" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-red transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Empresa / Productora *</label>
+                  <input type="text" required placeholder="Ej. Viva Salsa Live Concerts LLC" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-red transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Correo Corporativo *</label>
+                  <input type="email" required placeholder="produccion@empresa.com" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-red transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Teléfono & WhatsApp *</label>
+                  <input type="tel" required placeholder="+1 (555) 019-2834" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-red transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Tipo de Evento</label>
+                  <select class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-red transition-colors">
+                    <option>Festival Internacional Masivo</option>
+                    <option>Teatro / Sala de Conciertos</option>
+                    <option>Concierto Privado / VIP</option>
+                    <option>Convención / Evento Corporativo</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Fecha Estimada</label>
+                  <input type="date" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-red transition-colors">
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Ciudad y País del Show *</label>
+                  <input type="text" required placeholder="Ej. Medellín, Colombia" class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-red transition-colors">
+                </div>
+                <div>
+                  <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Formato Deseado</label>
+                  <select class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-red transition-colors">
+                    <option>Orquesta Completa (14 Músicos)</option>
+                    <option>Formato Acústico / Sexteto de Salsa</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-zinc-300 mb-1.5">Detalles del Recinto y Aforo Estimado</label>
+                <textarea rows="3" placeholder="Indica nombre del venue, aforo proyectado y requerimientos técnicos..." class="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-brand-red transition-colors"></textarea>
+              </div>
+
+              <button type="submit" class="w-full bg-brand-red hover:bg-brand-red-dark text-white font-extrabold uppercase text-sm tracking-wider py-4 rounded-lg transition-all shadow-xl hover:shadow-brand-red/50">
+                Enviar Solicitud de Booking Oficial
+              </button>
+
+              <p class="text-[11px] text-zinc-500 text-center pt-2">
+                Información protegida bajo estricta confidencialidad artística. Contrato directo garantizado.
+              </p>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- SOCIAL MEDIA COMMUNITY SECTION -->
+  <!-- ========================================== -->
+  <section id="redes" class="py-20 bg-[#0E0E0E] border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      
+      <span class="text-brand-red font-bold text-xs uppercase tracking-widest">Comunidad Oficial</span>
+      <h2 class="font-display font-black text-3xl sm:text-5xl uppercase tracking-tight text-white mt-2 mb-4">
+        Sigue el Ritmo en Redes
+      </h2>
+      <p class="text-zinc-400 text-sm max-w-xl mx-auto mb-12">
+        Accede a transmisiones de ensayos en vivo, historias de gira, improvisaciones de piano y camerinos exclusivos.
+      </p>
+
+      <!-- 4 Social Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+        
+        <!-- YouTube -->
+        <a href="https://www.youtube.com/@paulnaar9507" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-brand-surface border border-brand-border hover:border-brand-red hover:scale-105 transition-all group">
+          <div class="w-12 h-12 rounded-lg bg-red-600/10 text-red-500 flex items-center justify-center mb-4 group-hover:bg-red-600 group-hover:text-white transition-colors">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white">YouTube</h3>
+          <p class="text-xs text-zinc-400 mt-1">@paulnaar9507</p>
+          <span class="inline-block text-xs font-bold text-brand-red mt-4 group-hover:translate-x-1 transition-transform">Ver Videoclips &rarr;</span>
+        </a>
+
+        <!-- Facebook -->
+        <a href="https://www.facebook.com/profile.php?id=100075986866922" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-brand-surface border border-brand-border hover:border-brand-red hover:scale-105 transition-all group">
+          <div class="w-12 h-12 rounded-lg bg-blue-600/10 text-blue-500 flex items-center justify-center mb-4 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white">Facebook</h3>
+          <p class="text-xs text-zinc-400 mt-1">Paul Naar Oficial</p>
+          <span class="inline-block text-xs font-bold text-brand-red mt-4 group-hover:translate-x-1 transition-transform">Unirse a la Página &rarr;</span>
+        </a>
+
+        <!-- Instagram -->
+        <a href="https://www.instagram.com/paulnaar2026/reels/" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-brand-surface border border-brand-border hover:border-brand-red hover:scale-105 transition-all group">
+          <div class="w-12 h-12 rounded-lg bg-pink-600/10 text-pink-500 flex items-center justify-center mb-4 group-hover:bg-pink-600 group-hover:text-white transition-colors">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white">Instagram</h3>
+          <p class="text-xs text-zinc-400 mt-1">@paulnaar2026</p>
+          <span class="inline-block text-xs font-bold text-brand-red mt-4 group-hover:translate-x-1 transition-transform">Ver Reels & Gira &rarr;</span>
+        </a>
+
+        <!-- TikTok -->
+        <a href="https://www.tiktok.com/@paulnaar" target="_blank" rel="noopener noreferrer" class="p-6 rounded-xl bg-brand-surface border border-brand-border hover:border-brand-red hover:scale-105 transition-all group">
+          <div class="w-12 h-12 rounded-lg bg-zinc-800 text-white flex items-center justify-center mb-4 group-hover:bg-brand-red transition-colors">
+            <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.97v7.41c.01 1.8-.46 3.63-1.48 5.12-1.23 1.83-3.23 3.06-5.41 3.39-2.02.32-4.14-.06-5.91-1.07-2.31-1.32-3.79-3.75-3.8-6.43-.05-2.72 1.4-5.26 3.68-6.68 1.84-1.15 4.1-1.48 6.2-.88v4.14c-1.12-.4-2.39-.33-3.46.22-1.12.58-1.87 1.74-1.92 3-.06 1.44.75 2.82 2.01 3.48 1.25.66 2.8.58 3.97-.22.9-.62 1.46-1.64 1.48-2.71V.02z"/></svg>
+          </div>
+          <h3 class="font-display font-bold text-lg text-white">TikTok</h3>
+          <p class="text-xs text-zinc-400 mt-1">@paulnaar</p>
+          <span class="inline-block text-xs font-bold text-brand-red mt-4 group-hover:translate-x-1 transition-transform">Ver Ensayos &rarr;</span>
+        </a>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================== -->
+  <!-- FOOTER -->
+  <!-- ========================================== -->
+  <footer class="bg-black border-t border-brand-border py-12 text-zinc-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div class="flex items-center gap-3">
+        <span class="font-display font-extrabold text-lg text-white">PAUL <span class="text-brand-red">NAAR</span></span>
+        <span class="text-zinc-600">|</span>
+        <span>Salsa Brava • Son • Bolero</span>
+      </div>
+      <div>
+        &copy; 2026 Paul Naar. Todos los derechos reservados. Sitio oficial y booking internacional.
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="#booking" class="hover:text-white transition-colors">Rider Técnico</a>
+        <a href="#musica" class="hover:text-white transition-colors">Discografía</a>
+        <a href="#gira" class="hover:text-white transition-colors">Tour 2026</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================== -->
+  <!-- STICKY BOTTOM AUDIO PLAYER BAR -->
+  <!-- ========================================== -->
+  <aside aria-label="Reproductor de audio" class="fixed bottom-0 left-0 right-0 z-40 bg-[#121212]/95 backdrop-blur-md border-t border-brand-border px-4 py-3">
+    <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+      
+      <!-- Track playing now -->
+      <div class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded bg-brand-surface border border-zinc-800 overflow-hidden flex-shrink-0">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBAm12AlEhMOmRh9yo6xw7RZR7rDVu7K14Mrw2sn_cHaU0EnnFgUSLFtJVVv-pL_t697dnQah2WcuGz6cvLF-xk1ZCPwV4OSPiTJa9P40epyovSbAaz5GiSLi9WcBlCQcvvBmOD9RkJEx0LDe1G2hVn7IaApdEovh5yPwDalnkbdCtesvHhVdi9a2ybPQJmruGa99t7EZuLq1aahdujBDyWcqwVMcyir37dX3_WfPFlVXtECiMyNyP0zw" alt="Now playing" class="w-full h-full object-cover">
+        </div>
+        <div class="truncate">
+          <div class="font-bold text-xs text-white truncate">Corazón de Rumbero</div>
+          <div class="text-[10px] text-zinc-400 truncate">Paul Naar • Álbum Corazón de Rumbero</div>
+        </div>
+      </div>
+
+      <!-- Controls & Waveform -->
+      <div class="flex items-center gap-4">
+        <div class="hidden sm:flex items-center gap-1">
+          <span class="w-1 h-3 bg-brand-red animate-pulse"></span>
+          <span class="w-1 h-5 bg-brand-red animate-pulse delay-75"></span>
+          <span class="w-1 h-2 bg-brand-red animate-pulse delay-150"></span>
+          <span class="w-1 h-6 bg-brand-red animate-pulse"></span>
+          <span class="w-1 h-4 bg-brand-red animate-pulse delay-100"></span>
+        </div>
+        <button onclick="alert('Reproduciendo pista oficial: Corazón de Rumbero - Paul Naar');" class="w-9 h-9 rounded-full bg-brand-red hover:bg-brand-red-dark text-white flex items-center justify-center transition-all shadow-md">
+          <svg class="w-4 h-4 fill-current ml-0.5" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </button>
+      </div>
+
+      <!-- Streaming CTA -->
+      <a href="https://www.youtube.com/@paulnaar9507" target="_blank" rel="noopener noreferrer" class="hidden md:inline-flex items-center gap-1.5 text-xs font-bold text-zinc-300 hover:text-white uppercase tracking-wider">
+        <span>Abrir en YouTube</span>
+        <svg class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+      </a>
+
+    </div>
+  </aside>
+
+</body>
+</html>

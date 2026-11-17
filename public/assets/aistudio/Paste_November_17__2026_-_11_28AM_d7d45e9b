@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Syne:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"tertiary-container":"#d63135","on-secondary":"#3f2e00","outline-variant":"#5c403c","surface-container-lowest":"#0e0e0e","on-error":"#690005","on-surface":"#e5e2e1","error":"#ffb4ab","secondary-container":"#e4ae00","surface-bright":"#393939","surface-container-low":"#1c1b1b","secondary":"#ffca45","tertiary-fixed":"#ffdad7","surface-container-high":"#2a2a2a","inverse-surface":"#e5e2e1","on-primary-fixed":"#410002","outline":"#ac8884","on-surface-variant":"#e6bdb8","secondary-fixed-dim":"#f7be1d","on-secondary-fixed-variant":"#5a4300","on-tertiary-fixed-variant":"#930013","on-tertiary-container":"#fff6f5","surface-container-highest":"#353534","primary-container":"#dc2626","on-background":"#e5e2e1","surface-container":"#201f1f","surface-dim":"#131313","inverse-on-surface":"#313030","on-error-container":"#ffdad6","secondary-fixed":"#ffdf9a","on-secondary-container":"#5b4400","on-secondary-fixed":"#251a00","on-primary":"#690005","on-primary-container":"#fff6f5","surface-tint":"#ffb4ab","primary-fixed-dim":"#ffb4ab","primary":"#ffb4ab","surface-variant":"#353534","primary-fixed":"#ffdad6","tertiary-fixed-dim":"#ffb3ad","on-tertiary-fixed":"#410004","inverse-primary":"#bf0715","on-primary-fixed-variant":"#93000b","tertiary":"#ffb3ad","surface":"#131313","error-container":"#93000a","on-tertiary":"#68000a","background":"#131313"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"gutter-mobile":"1rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter":"1.5rem","space-xs":"0.25rem","margin":"3rem","space-xl":"2.5rem","margin-mobile":"1.25rem","space-md":"1rem"},"fontFamily":{"headline-lg-mobile":["Syne"],"body-md":["Inter"],"headline-sm":["Syne"],"label-lg":["Inter"],"body-sm":["Inter"],"label-md":["Inter"],"headline-lg":["Syne"],"headline-md":["Syne"],"label-caps":["Syne"],"display-hero":["Syne"],"display-hero-mobile":["Syne"],"body-lg":["Inter"]},"fontSize":{"headline-lg-mobile":["32px",{"lineHeight":"36px","letterSpacing":"-0.01em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"0em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.05em","fontWeight":"600"}],"body-sm":["13px",{"lineHeight":"20px","fontWeight":"400"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"600"}],"headline-lg":["48px",{"lineHeight":"52px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["28px",{"lineHeight":"34px","letterSpacing":"-0.01em","fontWeight":"700"}],"label-caps":["11px",{"lineHeight":"14px","letterSpacing":"0.14em","fontWeight":"700"}],"display-hero":["72px",{"lineHeight":"76px","letterSpacing":"-0.03em","fontWeight":"800"}],"display-hero-mobile":["40px",{"lineHeight":"44px","letterSpacing":"-0.02em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script></head><body class="bg-surface-container-lowest font-body-md text-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.4)]"><div class="h-20 max-w-[1360px] mx-auto px-gutter flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-lg shrink-0"><a class="flex items-center gap-space-xs group" data-path="inicio" href="#"><span class="font-headline-md text-headline-md tracking-tighter uppercase text-on-surface group-hover:text-primary-container transition-colors">Paul<span class="text-primary-container ml-1">Naar</span></span><span class="hidden xl:inline-block font-label-caps text-label-caps uppercase text-secondary tracking-widest pl-2">Cantautor</span></a></div><nav class="hidden lg:flex items-center gap-space-md" data-active-classes="text-on-surface bg-surface-container-high rounded px-3 py-1 font-semibold"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2" data-path="inicio" href="#">Inicio</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2" data-path="musica-y-lanzamientos" href="#">Música &amp; Lanzamientos</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2" data-path="biografia" href="#">Biografía</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2" data-path="gira-conciertos" href="#">Gira / Conciertos</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2" data-path="videos" href="#">Videos</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors py-1 px-2" data-path="booking-contacto" href="#">Booking &amp; Contacto</a></nav><div class="flex items-center gap-space-md shrink-0"><div class="hidden sm:flex items-center gap-space-xs text-on-surface-variant"><a aria-label="YouTube" class="p-2 hover:text-primary-container hover:bg-surface-container-high rounded transition-all" href="https://youtube.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] leading-none">play_circle</span></a><a aria-label="Facebook" class="p-2 hover:text-primary-container hover:bg-surface-container-high rounded transition-all" href="https://facebook.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] leading-none">public</span></a><a aria-label="Instagram" class="p-2 hover:text-primary-container hover:bg-surface-container-high rounded transition-all" href="https://instagram.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] leading-none">photo_camera</span></a><a aria-label="TikTok" class="p-2 hover:text-primary-container hover:bg-surface-container-high rounded transition-all" href="https://tiktok.com" rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined text-[20px] leading-none">music_note</span></a></div><a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-lg text-label-lg uppercase tracking-wider px-space-md py-2.5 rounded shadow-[0_0_20px_rgba(220,38,38,0.45)] hover:shadow-[0_0_28px_rgba(220,38,38,0.7)] hover:-translate-y-0.5 transition-all" data-path="booking-contacto" href="#">Contrataciones / Booking</a><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-secondary/50" src="https://lh3.googleusercontent.com/aida/ALJJyrBCVZnmDrxxahMCudKW2Aux9-M_VpGwKu_sei3HmPEPniheMJQ1fAecJvbQ7nltUCfwX7s6pLeOKqmOrp6dYeE3raJx3jpGb92a6LSXFHu3X5uTDF6ujBe2jS1A5ubZWa06Y5NdVvN6M2b2NpNtEPjUu3McdqFm9dTDHFhWL3R2KwUgIaDrQVCrSXZFYY-RK-rl7aLipxmwUUE3gm7YDorqzdjU1xEU64W6VafLDP7OP2c5Ar_M9bxxx3-B"/></div></div></header><main class="w-full pt-20 bg-surface-container-lowest min-h-screen"><div class="flex flex-col w-full">
+<!-- Atmospheric Scrim & Top Title Movement -->
+<section class="relative w-full overflow-hidden bg-surface-container-lowest pb-space-lg pt-space-md">
+<!-- Glow Backdrop -->
+<div class="pointer-events-none absolute -top-40 left-1/2 -translate-x-1/2 w-[850px] h-[360px] bg-primary-container/20 blur-[130px] rounded-full"></div>
+<div class="pointer-events-none absolute top-40 right-[-100px] w-[350px] h-[350px] bg-secondary/10 blur-[120px] rounded-full"></div>
+<div class="max-w-[1360px] mx-auto px-gutter relative z-10">
+<!-- Section Header with High Editorial Hierarchy -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div class="max-w-2xl">
+<div class="flex items-center gap-space-xs text-secondary mb-2">
+<span class="material-symbols-outlined text-[18px]">album</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Catálogo Fonográfico Oficial</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface">
+            Discografía &amp; <span class="text-primary-container">Lanzamientos</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-xl">
+            Explora los álbumes, sencillos y colaboraciones de Paul Naar con arreglos de salsa dura, salsa romántica y vanguardia de orquesta latina en vivo.
+          </p>
+</div>
+<!-- Filter Pill Chips -->
+<div class="flex flex-wrap items-center gap-1.5 p-1 bg-surface-container rounded-full" id="filter-container">
+<button class="filter-btn font-label-md text-label-md uppercase px-4 py-1.5 rounded-full bg-primary-container text-on-primary-container transition-all" data-filter="all">Todos</button>
+<button class="filter-btn font-label-md text-label-md uppercase px-4 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-filter="album">Álbumes</button>
+<button class="filter-btn font-label-md text-label-md uppercase px-4 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-filter="single">Sencillos</button>
+<button class="filter-btn font-label-md text-label-md uppercase px-4 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-filter="live">En Vivo</button>
+<button class="filter-btn font-label-md text-label-md uppercase px-4 py-1.5 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-filter="collab">Colaboraciones</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Master Release (Corazón de Rumbero) -->
+<section class="w-full relative z-10 pb-space-xl">
+<div class="max-w-[1360px] mx-auto px-gutter">
+<div class="relative rounded-xl overflow-hidden bg-surface-container-low shadow-[0_16px_48px_rgba(0,0,0,0.6)]">
+<!-- Subtle Crimson Accent Glow behind card content -->
+<div class="absolute -right-20 -bottom-20 w-96 h-96 bg-primary-container/15 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-0">
+<!-- Album Artwork Column -->
+<div class="lg:col-span-5 relative group overflow-hidden bg-surface-container-lowest min-h-[460px] lg:min-h-full">
+<img alt="Corazón de Rumbero - Álbum de Estudio de Paul Naar" class="w-full h-full object-cover object-top scale-100 group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADmddjazV-TBz9ek64qxH4unLVzV0tYptD581WtSb8PWRAYhscp5KWYfbOmcTdGGAqE5hhtLl7i39S-9ilABAneDMrN3NbIYWEqMzdycqj_2pTDZZR0qIrwES5i9fh_66wHrWHtVRXJQA-p6WHDWvidrXCK2c0r3NbOq_YyYLwAC-byO_1yr6vw-pd9TAwLAvek1KukcI5iwd0MuArPvlX_4agYmJz0XhdAYfixueEBhx27UpWmZn70w"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent lg:hidden"></div>
+<!-- Vinyl Overhang Badge -->
+<div class="absolute top-4 left-4 flex items-center gap-2 bg-surface-container-lowest/80 backdrop-blur-md px-3 py-1.5 rounded">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase text-on-surface tracking-wider">Nuevo Lanzamiento 2026</span>
+</div>
+<!-- Vinyl Visual Badge -->
+<div class="absolute bottom-4 left-4 right-4 p-space-md rounded bg-surface-container-lowest/90 backdrop-blur-md hidden sm:flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[28px]">graphic_eq</span>
+<div>
+<div class="font-label-caps text-label-caps uppercase text-secondary">Mastering Hi-Res</div>
+<div class="font-label-md text-label-md text-on-surface">96kHz / 24-bit Studio Master</div>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary-container">10 Temas</span>
+</div>
+</div>
+<!-- Album Info & Tracklist Column -->
+<div class="lg:col-span-7 p-space-lg lg:p-space-xl flex flex-col justify-between">
+<div>
+<div class="flex flex-wrap items-center gap-space-xs text-on-surface-variant font-label-caps text-label-caps uppercase tracking-widest mb-2">
+<span class="text-secondary font-bold">Álbum de Estudio</span>
+<span>•</span>
+<span>Producción 2026</span>
+<span>•</span>
+<span class="text-on-surface">Salsa Brava • Salsa Moderna</span>
+</div>
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-space-xs">
+<h2 class="font-display-hero-mobile lg:font-display-hero text-display-hero-mobile lg:text-display-hero uppercase text-on-surface tracking-tighter">
+                  Corazón de <span class="text-primary-container">Rumbero</span>
+</h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 max-w-2xl">
+                La consagración sonora de Paul Naar: secciones de vientos rugientes, métricas de tambor batá y líricas que retratan el alma del barrio latino contemporáneo sin perder la cadencia elegante del son tradicional.
+              </p>
+<!-- Tracklist Module -->
+<div class="mt-space-lg space-y-1.5" id="tracklist-container">
+<!-- Track 1 (Active / Playing) -->
+<div class="track-row group flex items-center justify-between p-space-sm rounded bg-surface-container-high transition-colors cursor-pointer" data-track-id="1" data-track-name="Corazón de Rumbero" data-track-time="4:38">
+<div class="flex items-center gap-space-sm min-w-0">
+<button aria-label="Reproducir pista" class="track-play-btn w-9 h-9 shrink-0 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center transition-transform hover:scale-105">
+<span class="material-symbols-outlined text-[20px]">pause</span>
+</button>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-primary-container">01</span>
+<span class="font-label-lg text-label-lg text-on-surface truncate font-semibold">Corazón de Rumbero</span>
+<span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-secondary-container/20 text-secondary uppercase">Focus Track</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Arreglos: Paul Naar &amp; Los Bravos del Solar</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<button aria-label="Ver Letra" class="lyrics-trigger hover:text-primary-container text-on-surface-variant transition-colors" data-track="1">
+<span class="material-symbols-outlined text-[18px]">lyrics</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant">4:38</span>
+</div>
+</div>
+<!-- Track 2 -->
+<div class="track-row group flex items-center justify-between p-space-sm rounded hover:bg-surface-container-high transition-colors cursor-pointer" data-track-id="2" data-track-name="Tumbao de Medianoche" data-track-time="5:12">
+<div class="flex items-center gap-space-sm min-w-0">
+<button aria-label="Reproducir pista" class="track-play-btn w-9 h-9 shrink-0 rounded-full bg-surface-container-highest group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant">02</span>
+<span class="font-label-lg text-label-lg text-on-surface truncate">Tumbao de Medianoche</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Piano solo: Danilo Morales</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<button aria-label="Ver Letra" class="lyrics-trigger hover:text-primary-container text-on-surface-variant transition-colors" data-track="2">
+<span class="material-symbols-outlined text-[18px]">lyrics</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant">5:12</span>
+</div>
+</div>
+<!-- Track 3 -->
+<div class="track-row group flex items-center justify-between p-space-sm rounded hover:bg-surface-container-high transition-colors cursor-pointer" data-track-id="3" data-track-name="Esa Mirada en la Barra" data-track-time="4:05">
+<div class="flex items-center gap-space-sm min-w-0">
+<button aria-label="Reproducir pista" class="track-play-btn w-9 h-9 shrink-0 rounded-full bg-surface-container-highest group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant">03</span>
+<span class="font-label-lg text-label-lg text-on-surface truncate">Esa Mirada en la Barra</span>
+<span class="font-label-caps text-label-caps px-1.5 py-0.5 rounded bg-surface-container text-on-surface-variant uppercase">Romántica</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Composición de Paul Naar</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<button aria-label="Ver Letra" class="lyrics-trigger hover:text-primary-container text-on-surface-variant transition-colors" data-track="3">
+<span class="material-symbols-outlined text-[18px]">lyrics</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant">4:05</span>
+</div>
+</div>
+<!-- Track 4 -->
+<div class="track-row group flex items-center justify-between p-space-sm rounded hover:bg-surface-container-high transition-colors cursor-pointer" data-track-id="4" data-track-name="Repique y Clave" data-track-time="4:45">
+<div class="flex items-center gap-space-sm min-w-0">
+<button aria-label="Reproducir pista" class="track-play-btn w-9 h-9 shrink-0 rounded-full bg-surface-container-highest group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant">04</span>
+<span class="font-label-lg text-label-lg text-on-surface truncate">Repique y Clave</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Percusión: Manny 'Candela' Ramos</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<button aria-label="Ver Letra" class="lyrics-trigger hover:text-primary-container text-on-surface-variant transition-colors" data-track="4">
+<span class="material-symbols-outlined text-[18px]">lyrics</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant">4:45</span>
+</div>
+</div>
+<!-- Track 5 -->
+<div class="track-row group flex items-center justify-between p-space-sm rounded hover:bg-surface-container-high transition-colors cursor-pointer" data-track-id="5" data-track-name="Mi Barrio Canta y No Llora" data-track-time="5:29">
+<div class="flex items-center gap-space-sm min-w-0">
+<button aria-label="Reproducir pista" class="track-play-btn w-9 h-9 shrink-0 rounded-full bg-surface-container-highest group-hover:bg-primary-container text-on-surface group-hover:text-on-primary-container flex items-center justify-center transition-all">
+<span class="material-symbols-outlined text-[20px]">play_arrow</span>
+</button>
+<div class="min-w-0">
+<div class="flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant">05</span>
+<span class="font-label-lg text-label-lg text-on-surface truncate">Mi Barrio Canta y No Llora</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate block">Feat. Orquesta Guaguancó 70</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md shrink-0">
+<button aria-label="Ver Letra" class="lyrics-trigger hover:text-primary-container text-on-surface-variant transition-colors" data-track="5">
+<span class="material-symbols-outlined text-[18px]">lyrics</span>
+</button>
+<span class="font-label-md text-label-md text-on-surface-variant">5:29</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Direct DSP External Links -->
+<div class="mt-space-lg pt-space-md flex flex-wrap items-center justify-between gap-space-md bg-surface-container p-space-md rounded">
+<div class="flex items-center gap-space-xs text-on-surface">
+<span class="material-symbols-outlined text-primary-container">headphones</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">Escúchalo en Plataformas:</span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all" href="https://spotify.com" rel="noopener noreferrer" target="_blank">
+<span class="font-semibold">Spotify</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all" href="https://apple.com/music" rel="noopener noreferrer" target="_blank">
+<span class="font-semibold">Apple Music</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all" href="https://music.youtube.com" rel="noopener noreferrer" target="_blank">
+<span class="font-semibold">YouTube Music</span>
+</a>
+<a class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container text-on-surface font-label-md text-label-md transition-all" href="https://deezer.com" rel="noopener noreferrer" target="_blank">
+<span class="font-semibold">Deezer</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Editorial Highlight Band: Lyrics & Beat Philosophy -->
+<section class="w-full bg-surface-container-low py-space-xl relative overflow-hidden">
+<!-- Inline Dynamic Graphic Spectrum -->
+<div class="absolute right-0 top-1/2 -translate-y-1/2 opacity-10 pointer-events-none pr-space-xl">
+<svg class="text-primary-container" fill="none" height="180" viewbox="0 0 420 180" width="420">
+<rect fill="currentColor" height="100" rx="4" width="8" x="0" y="40"></rect>
+<rect fill="currentColor" height="140" rx="4" width="8" x="18" y="20"></rect>
+<rect fill="currentColor" height="70" rx="4" width="8" x="36" y="55"></rect>
+<rect fill="currentColor" height="160" rx="4" width="8" x="54" y="10"></rect>
+<rect fill="currentColor" height="120" rx="4" width="8" x="72" y="30"></rect>
+<rect fill="currentColor" height="40" rx="4" width="8" x="90" y="70"></rect>
+<rect fill="currentColor" height="130" rx="4" width="8" x="108" y="25"></rect>
+<rect fill="currentColor" height="170" rx="4" width="8" x="126" y="5"></rect>
+<rect fill="currentColor" height="90" rx="4" width="8" x="144" y="45"></rect>
+<rect fill="currentColor" height="150" rx="4" width="8" x="162" y="15"></rect>
+<rect fill="currentColor" height="60" rx="4" width="8" x="180" y="60"></rect>
+<rect fill="currentColor" height="110" rx="4" width="8" x="198" y="35"></rect>
+<rect fill="currentColor" height="160" rx="4" width="8" x="216" y="10"></rect>
+<rect fill="currentColor" height="84" rx="4" width="8" x="234" y="48"></rect>
+<rect fill="currentColor" height="136" rx="4" width="8" x="252" y="22"></rect>
+<rect fill="currentColor" height="30" rx="4" width="8" x="270" y="75"></rect>
+<rect fill="currentColor" height="100" rx="4" width="8" x="288" y="40"></rect>
+<rect fill="currentColor" height="144" rx="4" width="8" x="306" y="18"></rect>
+<rect fill="currentColor" height="76" rx="4" width="8" x="324" y="52"></rect>
+<rect fill="currentColor" height="164" rx="4" width="8" x="342" y="8"></rect>
+<rect fill="currentColor" height="116" rx="4" width="8" x="360" y="32"></rect>
+<rect fill="currentColor" height="56" rx="4" width="8" x="378" y="62"></rect>
+<rect fill="currentColor" height="124" rx="4" width="8" x="396" y="28"></rect>
+</svg>
+</div>
+<div class="max-w-[1360px] mx-auto px-gutter relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-center">
+<!-- Quote Snippet -->
+<div class="lg:col-span-8 space-y-space-sm">
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-[20px]">format_quote</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Frase Clave de la Producción</span>
+</div>
+<blockquote class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface italic font-bold leading-tight">
+            “La salsa no se piensa, se vive en cada paso, en cada descarga y en la mirada del que suda por amor al ritmo.”
+          </blockquote>
+<p class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-wider">
+            — Paul Naar • De la suite lírica de <span class="text-secondary font-semibold">Corazón de Rumbero</span>
+</p>
+</div>
+<!-- DJ & Radio Promo Box -->
+<div class="lg:col-span-4 bg-surface-container p-space-lg rounded-xl shadow-lg flex flex-col justify-between">
+<div class="space-y-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Zona Profesionales</span>
+<span class="material-symbols-outlined text-primary-container text-[20px]">radio</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">EPK &amp; Pack Radial para DJs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Descarga directa en WAV (sin compresión), acapellas, stems de percusión y hojas de crédito oficiales autorizadas por Naar Records.
+            </p>
+</div>
+<div class="mt-space-md pt-space-sm space-y-2">
+<button class="w-full bg-primary-container hover:bg-tertiary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider py-2.5 px-space-md rounded flex items-center justify-center gap-space-xs transition-colors">
+<span class="material-symbols-outlined text-[18px]">cloud_download</span>
+<span>Descargar Promo Pack DJ (ZIP • 418 MB)</span>
+</button>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps">
+<span>Incluye Intro/Outro Extended</span>
+<span>ID de Radio Paul Naar</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Discography Grid Section -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="max-w-[1360px] mx-auto px-gutter">
+<!-- Section Title & Meta -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-space-sm pb-space-lg">
+<div>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary block mb-1">Archivo de Lanzamientos</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase text-on-surface">
+            Discografía <span class="text-primary-container">Completa</span>
+</h2>
+</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">
+          Mostrando <span class="text-on-surface font-semibold">4 producciones</span> destacadas
+        </div>
+</div>
+<!-- 4 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md" id="discography-grid">
+<!-- Card 1: Fuego en la Clave (Single) -->
+<article class="disco-card group flex flex-col justify-between bg-surface-container-low rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300" data-category="single">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img alt="Fuego en la Clave Single Portada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZ0BWK4KFRArpZpD1u8WnpE1YIJ1aIfSMS0JkZoktjphJiiS2RdrXS9qgsOR426v9fcL7klyez_5ZDvl8xlAhXxoVpntETWD_G9MR7EFyJZi3gMRic2sp2DfJ__tNQhrtOpoa1Ep-Ycd--t6oRP2TK9Fm8NPSaxLZ0B7D6KF11u4UKu59mzWQVsepC-yCN6LjhG7d6k-sb9iwUDGI8xngxsG9kXjzqdcx3O7L9AC0B4l23biZVuBWQbg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-3 left-3">
+<span class="font-label-caps text-label-caps uppercase px-2.5 py-1 rounded bg-primary-container text-on-primary-container font-bold tracking-wider">
+                Sencillo
+              </span>
+</div>
+<!-- Quick Play Hover Overlay -->
+<button aria-label="Reproducir Fuego en la Clave" class="absolute bottom-3 right-3 w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps uppercase mb-1">
+<span>2025</span>
+<span>1 Tema • 4:18</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary-container transition-colors line-clamp-1">
+                Fuego en la Clave
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                Potente tema de timba y trombones al estilo clásico neoyorquino con base cubana.
+              </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Naar Records</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary-container transition-colors" title="Spotify">
+<span class="material-symbols-outlined text-[20px]">music_note</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary-container transition-colors" title="Guardar">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 2: Noches de Timba (EP) -->
+<article class="disco-card group flex flex-col justify-between bg-surface-container-low rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300" data-category="album">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A gritty high-contrast album cover for a Latin salsa timba EP. Dark crimson red backdrop with intense warm gold reflections on brass conga rims and trumpet bells. Deep shadows, cinematic studio lighting with energetic texture and modern typography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDwI-0EZgtF-KRUYWrIqylZ45al1a6_xClYbjlf0tunBIrPrBRddFoRlVGXEUdlw0xwmS7P3yyzY5_lOJEx2KNZxtiuS8NY-oHHpF6GCC3a6sMU8vCkGk-IPXSPZ7EzTnYXy8CwXfPd16vrXl-o7tButFt8X90BEMfDQnV0PGLz3DtyITtSDE5KdQmW2s2hzNovhQh_XvlGlWj-H2FFHF57z7p2npC6bqAJSugRijIl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-3 left-3">
+<span class="font-label-caps text-label-caps uppercase px-2.5 py-1 rounded bg-secondary-container text-on-secondary font-bold tracking-wider">
+                EP Especial
+              </span>
+</div>
+<button aria-label="Reproducir Noches de Timba" class="absolute bottom-3 right-3 w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps uppercase mb-1">
+<span>2024</span>
+<span>5 Temas • 23 min</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary-container transition-colors line-clamp-1">
+                Noches de Timba
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                Fusión audaz de mambo moderno y timba callejera grabada con metales en directo en San Juan.
+              </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Latin Sound Lab</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary-container transition-colors" title="Spotify">
+<span class="material-symbols-outlined text-[20px]">music_note</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary-container transition-colors" title="Guardar">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 3: Pasión Tropical -->
+<article class="disco-card group flex flex-col justify-between bg-surface-container-low rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300" data-category="album">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An atmospheric salsa record cover titled Pasion Tropical. Deep stage shadows, intense ruby crimson lighting shining on a singer's vintage dynamic microphone and piano keys. Pure elegance, minimalist layout with gold typography accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXMkJ3ctILJbNmcTDcYEgFtzcdtWuWqsCU9DGGym6Uqev1R5RGoaY0ax-NyhMLXo1_JrVzQj42KWW2Ue83emxtIs_EYQ3VkG1rld-z8pi1k0J_KiHQEh2YVoJpxh4XyybQpWdgcVQDjFzVSVkaXZkREAvwSIFJfMjo5DTspqm_WhDhUzPY3HiNMcB8A5v9oNsuGwANdj5-80x6bJeAHqSCPzv7ptBexAOdY_RxdrDx"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-3 left-3">
+<span class="font-label-caps text-label-caps uppercase px-2.5 py-1 rounded bg-surface-container text-on-surface font-bold tracking-wider">
+                Álbum
+              </span>
+</div>
+<button aria-label="Reproducir Pasión Tropical" class="absolute bottom-3 right-3 w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps uppercase mb-1">
+<span>2023</span>
+<span>8 Temas • 37 min</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary-container transition-colors line-clamp-1">
+                Pasión Tropical
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                El disco que definió el estilo vocal de Paul Naar con boleros son y salsa para el bailador.
+              </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Fania Legacy Dist.</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary-container transition-colors" title="Spotify">
+<span class="material-symbols-outlined text-[20px]">music_note</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary-container transition-colors" title="Guardar">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- Card 4: Paul Naar En Vivo desde Bellas Artes -->
+<article class="disco-card group flex flex-col justify-between bg-surface-container-low rounded-xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300" data-category="live">
+<div class="relative overflow-hidden aspect-square bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Concert stage photography cover of a full 16-piece salsa orchestra performing live in a historic theater. Dramatic red spotlights casting over the stage floor, silhouettes of brass players, congas and timbales in action under warm golden beams." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmImC7mxLbV7dHxogiPjgkWY4U4jQfI1xHDGHPyEbUfB8TgdbAQYupFZTebonwM4AgXwapsH-9uDd0ZWEtOOT6_BBKjQKGAX-BU8LHa55jNGke9XCJRV5E8bfl_tFkHdUTN-IxD1iHvzyBqylwFwd0WTk7-Sfdy0RF8JXgC5BA7ZT0jx0qAGMlHMlROWrh18UzAQfEm6AI1litTuhxNgZqGAg0KTtiF6pQT4HxZ4EE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-3 left-3">
+<span class="font-label-caps text-label-caps uppercase px-2.5 py-1 rounded bg-tertiary-container text-on-tertiary-container font-bold tracking-wider">
+                En Vivo (Live)
+              </span>
+</div>
+<button aria-label="Reproducir En Vivo desde Bellas Artes" class="absolute bottom-3 right-3 w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shadow-lg translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+<span class="material-symbols-outlined text-[24px]">play_arrow</span>
+</button>
+</div>
+<div class="p-space-md flex-1 flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between text-on-surface-variant font-label-caps text-label-caps uppercase mb-1">
+<span>2022</span>
+<span>12 Temas • 62 min</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary-container transition-colors line-clamp-1">
+                En Vivo: Bellas Artes
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 line-clamp-2">
+                Concierto sinfónico completo con orquesta de 18 músicos en sala llena de aplausos.
+              </p>
+</div>
+<div class="pt-space-md mt-space-sm flex items-center justify-between">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider">Live Masters</span>
+</div>
+<div class="flex items-center gap-2">
+<button class="text-on-surface-variant hover:text-primary-container transition-colors" title="Spotify">
+<span class="material-symbols-outlined text-[20px]">music_note</span>
+</button>
+<button class="text-on-surface-variant hover:text-primary-container transition-colors" title="Guardar">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+<!-- Interactive Lyrics Modal (Hidden by Default) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-surface-container-lowest/80 backdrop-blur-md hidden opacity-0 transition-opacity duration-300" id="lyrics-modal">
+<div class="bg-surface-container-low max-w-lg w-full rounded-xl p-space-lg shadow-2xl relative max-h-[85vh] flex flex-col">
+<div class="flex items-start justify-between pb-space-md">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Letra Oficial</span>
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface" id="modal-song-title">Corazón de Rumbero</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Compositor: Paul Naar • Derechos Reservados</p>
+</div>
+<button class="p-1 rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-all" id="close-lyrics">
+<span class="material-symbols-outlined text-[24px]">close</span>
+</button>
+</div>
+<div class="overflow-y-auto pr-space-xs space-y-space-md font-body-md text-body-md text-on-surface leading-relaxed flex-1">
+<p class="text-on-surface-variant italic">[Introducción de Trombones y Campana]</p>
+<p>
+          Oye mi compás que viene por la acera,<br/>
+          traigo la descarga que te pone a temblar.<br/>
+          No me hables de pena, no me des barrera,<br/>
+          que cuando truena el cuero yo salgo a cantar.
+        </p>
+<div class="p-space-sm rounded bg-surface-container text-secondary font-semibold">
+          [Coro]<br/>
+          Corazón de rumbero que nunca se rinde,<br/>
+          lleva fuego en la vena y sabor en la piel.<br/>
+          La salsa es el templo donde el dolor se extingue,<br/>
+          ¡sube los metales y déjalo correr!
+        </div>
+<p>
+          Dicen que la noche tiene su misterio,<br/>
+          yo tengo el candado y tengo la verdad.<br/>
+          Vengo de la esquina, del son callejero,<br/>
+          donde la palabra tiene dignidad.
+        </p>
+<p class="text-on-surface-variant italic">[Solo de Timbal • Descarga Rítmica]</p>
+<p>
+          ¡Abre camino que llegó Naar con la orquesta viva!<br/>
+          ¡La clave nunca duerme!
+        </p>
+</div>
+<div class="pt-space-md mt-space-sm flex justify-end">
+<button class="bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md uppercase px-space-md py-2 rounded transition-colors" id="close-lyrics-btn">
+          Cerrar
+        </button>
+</div>
+</div>
+</div>
+<!-- Anchored Master Sticky Audio Wave Bar -->
+<div class="sticky bottom-0 left-0 right-0 z-40 bg-surface-container/95 backdrop-blur-xl shadow-[0_-8px_32px_rgba(0,0,0,0.7)] py-3 px-gutter">
+<div class="max-w-[1360px] mx-auto flex flex-col sm:flex-row items-center justify-between gap-space-sm">
+<!-- Current Track Info -->
+<div class="flex items-center gap-space-sm w-full sm:w-1/3 min-w-0">
+<div class="relative w-12 h-12 rounded shrink-0 overflow-hidden bg-surface-container-highest">
+<img alt="Mini cover" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADmddjazV-TBz9ek64qxH4unLVzV0tYptD581WtSb8PWRAYhscp5KWYfbOmcTdGGAqE5hhtLl7i39S-9ilABAneDMrN3NbIYWEqMzdycqj_2pTDZZR0qIrwES5i9fh_66wHrWHtVRXJQA-p6WHDWvidrXCK2c0r3NbOq_YyYLwAC-byO_1yr6vw-pd9TAwLAvek1KukcI5iwd0MuArPvlX_4agYmJz0XhdAYfixueEBhx27UpWmZn70w"/>
+<div class="absolute inset-0 bg-primary-container/20"></div>
+</div>
+<div class="min-w-0">
+<div class="font-label-lg text-label-lg text-on-surface truncate font-semibold" id="player-title">Corazón de Rumbero</div>
+<div class="font-body-sm text-body-sm text-secondary truncate flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+<span>Paul Naar • Álbum Corazón de Rumbero</span>
+</div>
+</div>
+</div>
+<!-- Center Waveform & Player Buttons -->
+<div class="flex flex-col items-center justify-center w-full sm:w-1/2 gap-1.5">
+<div class="flex items-center gap-space-md">
+<button class="text-on-surface-variant hover:text-on-surface transition-colors" title="Pista Anterior">
+<span class="material-symbols-outlined text-[22px]">skip_previous</span>
+</button>
+<button aria-label="Pausa o Reproducir" class="w-10 h-10 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center hover:scale-105 transition-all shadow-[0_0_16px_rgba(220,38,38,0.5)]" id="master-play-toggle">
+<span class="material-symbols-outlined text-[24px]" id="master-play-icon">pause</span>
+</button>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors" title="Siguiente Pista">
+<span class="material-symbols-outlined text-[22px]">skip_next</span>
+</button>
+<button class="text-on-surface-variant hover:text-secondary transition-colors" title="Repetir">
+<span class="material-symbols-outlined text-[18px]">repeat</span>
+</button>
+</div>
+<!-- Simulated Frequency Waveform Display -->
+<div class="w-full max-w-md flex items-center gap-2">
+<span class="font-label-caps text-label-caps text-on-surface-variant" id="current-time">01:42</span>
+<div class="flex-1 h-3 flex items-center gap-0.5 cursor-pointer group" id="wave-progress" title="Progreso de audio">
+<!-- Simulated Audio Bars -->
+<div class="w-1 h-1.5 bg-primary-container rounded-full"></div>
+<div class="w-1 h-3.5 bg-primary-container rounded-full"></div>
+<div class="w-1 h-2 bg-primary-container rounded-full"></div>
+<div class="w-1 h-5 bg-primary-container rounded-full"></div>
+<div class="w-1 h-2.5 bg-primary-container rounded-full"></div>
+<div class="w-1 h-4 bg-primary-container rounded-full"></div>
+<div class="w-1 h-6 bg-primary-container rounded-full"></div>
+<div class="w-1 h-3 bg-primary-container rounded-full"></div>
+<div class="w-1 h-4.5 bg-primary-container rounded-full"></div>
+<div class="w-1 h-5.5 bg-primary-container rounded-full"></div>
+<div class="w-1 h-2 bg-primary-container rounded-full"></div>
+<div class="w-1 h-4 bg-primary-container rounded-full"></div>
+<div class="w-1 h-6 bg-primary-container rounded-full"></div>
+<div class="w-1 h-3.5 bg-primary-container rounded-full"></div>
+<!-- Unplayed Buffer -->
+<div class="w-1 h-2 bg-on-surface-variant/30 rounded-full group-hover:bg-on-surface-variant/50"></div>
+<div class="w-1 h-5 bg-on-surface-variant/30 rounded-full group-hover:bg-on-surface-variant/50"></div>
+<div class="w-1 h-3 bg-on-surface-variant/30 rounded-full group-hover:bg-on-surface-variant/50"></div>
+<div class="w-1 h-1 bg-on-surface-variant/30 rounded-full group-hover:bg-on-surface-variant/50"></div>
+<div class="w-1 h-4 bg-on-surface-variant/30 rounded-full group-hover:bg-on-surface-variant/50"></div>
+<div class="w-1 h-2 bg-on-surface-variant/30 rounded-full group-hover:bg-on-surface-variant/50"></div>
+<div class="w-1 h-3.5 bg-on-surface-variant/30 rounded-full group-hover:bg-on-surface-variant/50"></div>
+<div class="w-1 h-5 bg-on-surface-variant/30 rounded-full group-hover:bg-on-surface-variant/50"></div>
+<div class="w-1 h-2 bg-on-surface-variant/30 rounded-full group-hover:bg-on-surface-variant/50"></div>
+</div>
+<span class="font-label-caps text-label-caps text-on-surface-variant" id="total-time">04:38</span>
+</div>
+</div>
+<!-- Volume & Direct Link Actions -->
+<div class="hidden sm:flex items-center justify-end gap-space-sm w-1/3">
+<div class="flex items-center gap-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[18px]">volume_up</span>
+<div class="w-16 h-1 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="w-4/5 h-full bg-secondary"></div>
+</div>
+</div>
+<a class="font-label-caps text-label-caps uppercase bg-surface-container-highest hover:bg-primary-container hover:text-on-primary-container px-3 py-1.5 rounded text-on-surface transition-colors" href="https://spotify.com" rel="noopener noreferrer" target="_blank">
+          Abrir en App
+        </a>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Discography filter logic
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const discoCards = document.querySelectorAll('.disco-card');
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Toggle active button style
+        filterButtons.forEach(btn => {
+          btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+          btn.classList.add('text-on-surface-variant');
+        });
+        button.classList.add('bg-primary-container', 'text-on-primary-container');
+        button.classList.remove('text-on-surface-variant');
+
+        const filter = button.getAttribute('data-filter');
+        discoCards.forEach(card => {
+          if (filter === 'all' || card.getAttribute('data-category') === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Tracklist Play button handler
+    const trackRows = document.querySelectorAll('.track-row');
+    const masterPlayIcon = document.getElementById('master-play-icon');
+    const playerTitle = document.getElementById('player-title');
+    const totalTime = document.getElementById('total-time');
+
+    trackRows.forEach(row => {
+      row.addEventListener('click', (e) => {
+        if (e.target.closest('.lyrics-trigger')) return;
+
+        const name = row.getAttribute('data-track-name');
+        const duration = row.getAttribute('data-track-time');
+        
+        playerTitle.textContent = name;
+        totalTime.textContent = duration;
+
+        // Reset all row play buttons
+        trackRows.forEach(r => {
+          r.classList.remove('bg-surface-container-high');
+          const btn = r.querySelector('.track-play-btn');
+          const icon = btn.querySelector('.material-symbols-outlined');
+          btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+          btn.classList.add('bg-surface-container-highest', 'text-on-surface');
+          icon.textContent = 'play_arrow';
+        });
+
+        // Set clicked row active
+        row.classList.add('bg-surface-container-high');
+        const activeBtn = row.querySelector('.track-play-btn');
+        const activeIcon = activeBtn.querySelector('.material-symbols-outlined');
+        activeBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+        activeBtn.classList.remove('bg-surface-container-highest', 'text-on-surface');
+        activeIcon.textContent = 'pause';
+
+        masterPlayIcon.textContent = 'pause';
+      });
+    });
+
+    // Master play button toggle
+    const masterPlayToggle = document.getElementById('master-play-toggle');
+    if (masterPlayToggle) {
+      masterPlayToggle.addEventListener('click', () => {
+        if (masterPlayIcon.textContent === 'pause') {
+          masterPlayIcon.textContent = 'play_arrow';
+        } else {
+          masterPlayIcon.textContent = 'pause';
+        }
+      });
+    }
+
+    // Lyrics Modal Handling
+    const lyricsTriggers = document.querySelectorAll('.lyrics-trigger');
+    const lyricsModal = document.getElementById('lyrics-modal');
+    const closeLyrics = document.getElementById('close-lyrics');
+    const closeLyricsBtn = document.getElementById('close-lyrics-btn');
+    const modalSongTitle = document.getElementById('modal-song-title');
+
+    function openModal(title) {
+      if (modalSongTitle && title) modalSongTitle.textContent = title;
+      lyricsModal.classList.remove('hidden');
+      setTimeout(() => {
+        lyricsModal.classList.remove('opacity-0');
+      }, 10);
+    }
+
+    function closeModal() {
+      lyricsModal.classList.add('opacity-0');
+      setTimeout(() => {
+        lyricsModal.classList.add('hidden');
+      }, 300);
+    }
+
+    lyricsTriggers.forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const row = trigger.closest('.track-row');
+        const songName = row ? row.getAttribute('data-track-name') : 'Corazón de Rumbero';
+        openModal(songName);
+      });
+    });
+
+    if (closeLyrics) closeLyrics.addEventListener('click', closeModal);
+    if (closeLyricsBtn) closeLyricsBtn.addEventListener('click', closeModal);
+
+    if (lyricsModal) {
+      lyricsModal.addEventListener('click', (e) => {
+        if (e.target === lyricsModal) closeModal();
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-low text-on-surface mt-space-xl"><div class="max-w-[1360px] mx-auto px-gutter pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-space-lg pb-space-xl"><div class="lg:col-span-4 space-y-space-md"><div class="font-headline-md text-headline-md tracking-tight uppercase text-on-surface">Paul<span class="text-primary-container ml-1">Naar</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Voz líder, compositor y exponente de la salsa brava contemporánea. Energía escénica arrolladora y sonido de orquesta en vivo.</p><div class="flex items-center gap-space-sm text-secondary"><span class="material-symbols-outlined">graphic_eq</span><span class="font-label-caps text-label-caps uppercase tracking-widest">Salsa Dura • Son • Bolero</span></div></div><div class="lg:col-span-2 space-y-space-sm"><div class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Navegación</div><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="inicio" href="#">Inicio</a></li><li><a class="hover:text-on-surface transition-colors" data-path="musica-y-lanzamientos" href="#">Música &amp; Lanzamientos</a></li><li><a class="hover:text-on-surface transition-colors" data-path="biografia" href="#">Biografía Oficial</a></li><li><a class="hover:text-on-surface transition-colors" data-path="gira-conciertos" href="#">Gira y Fechas</a></li><li><a class="hover:text-on-surface transition-colors" data-path="videos" href="#">Videos en Vivo</a></li><li><a class="hover:text-on-surface transition-colors" data-path="booking-contacto" href="#">Rider &amp; Contrataciones</a></li></ul></div><div class="lg:col-span-2 space-y-space-sm"><div class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">Comunidad</div><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" href="#">@paulnaarmusic</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Spotify Artist</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Apple Music</a></li><li><a class="hover:text-on-surface transition-colors" href="#">TIDAL Master</a></li><li><a class="hover:text-on-surface transition-colors" href="#">Prensa y Media Kit</a></li></ul></div><div class="lg:col-span-4 space-y-space-md"><div class="font-label-caps text-label-caps uppercase tracking-widest text-secondary">El Club de la Salsa</div><p class="font-body-sm text-body-sm text-on-surface-variant">Recibe accesos exclusivos de preventa, pases de camerino, lanzamientos anticipados y material inédito de Paul Naar.</p><form class="space-y-space-xs" onsubmit="event.preventDefault();"><div class="flex gap-space-xs"><input class="flex-1 bg-surface-container font-body-sm text-body-sm text-on-surface placeholder:text-on-surface-variant px-space-md py-2.5 rounded focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="Ingresa tu correo electrónico" type="email"/><button class="bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider px-space-md py-2.5 rounded hover:bg-tertiary-container transition-colors shrink-0" type="submit">Unirse</button></div><span class="font-label-caps text-label-caps text-on-surface-variant block">Respetamos tu privacidad. Solo salsa pura.</span></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md font-body-sm text-body-sm text-on-surface-variant"><div class="flex items-center gap-space-sm"><span class="font-headline-sm text-headline-sm text-primary-container">©</span><span>2026 Paul Naar. Todos los derechos reservados.</span></div><div class="flex items-center gap-space-md font-label-caps text-label-caps uppercase"><a class="hover:text-on-surface transition-colors" href="#">Privacidad</a><span>•</span><a class="hover:text-on-surface transition-colors" href="#">Términos</a><span>•</span><a class="hover:text-on-surface transition-colors" href="#">Rider Técnico</a></div></div></div></footer></body></html>

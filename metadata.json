@@ -1,0 +1,6 @@
+{
+  "name": "Paul Naar — Sitio Oficial | Salsa Moderna & Tour 2026",
+  "description": "Web oficial de Paul Naar: cantautor de salsa moderna y salsa brava contemporánea. Escucha Fuego en la Clave y Corazón de Rumbero, consulta fechas del Tour 2026 y solicita booking oficial.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
